@@ -1,3 +1,4 @@
+
 body {
   background-color: #F6D4D2;
   color: #A16AE8;
@@ -17,17 +18,18 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #4120A9;
+  background-color: #341948;
   padding: 1em;
   color: #A1A9FE;
   align-items: center;
-  
+  border-radius: 0  0 10px 10px;
 
 }
 
 .header__logo {
   text-transform: uppercase;
   font-size: 1.5em;
+  margin-left: 16px;
 }
 
 .header__nav ul {
@@ -44,7 +46,68 @@ body {
   margin: 20px
 }
 
-#header__nav--active{
+.header__nav a:hover{
   background-color: #000000;
   border-radius: 10px;
+  text-decoration:underline;
+  color: #A1A9FE;
+}
+
+.pricing{
+  display: flex;
+  gap: 16px;
+}
+
+.pricing-plan{
+  flex:1;
+  background-color: #341948;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px -6px #a1a9febb;
+  display: flex;
+  flex-direction: column;
+}
+
+h2.class-pla__title{
+  font-size: 1.5em;
+  text-align: left;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #A1A9FE;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+  
+
+}
+
+.pricing-plan p{
+  margin-top: 0;
+}
+
+.class-pla__price{
+  font-size: 20px;
+}
+
+.pricingplan__features li{
+  margin: 0 0 20px;
+  padding-left: 8px;
+  line-height: 1.2;
+}
+
+.pricing-plan__cta{
+  text-decoration: none;
+  color: #A1A9FE;
+  background-color:black;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: auto;
+  text-align: center;
+}
+
+.pricing-plan__cta:hover{
+  background-color: #A1A9FE;
+  color: #341948;
 }
